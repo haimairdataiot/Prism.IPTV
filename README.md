@@ -79,6 +79,7 @@ If your provider gave you a `get.php?username=…&password=…` link, paste it a
 | Hold OK (or ☰ Menu) | Options for the item (favourite, edit…) | |
 | BACK | Go back | Close overlay / leave the player |
 | 0–9 | Type a channel number | Type a channel number |
+| ⏺ Record (if your remote has it) | Record the selected guide programme | Record what you are watching: from the beginning or from now |
 
 ## Updates
 
@@ -95,6 +96,12 @@ Every download is verified (SHA-256), and Android only accepts an update signed 
 * Full TV guide (XMLTV) and catch-up for providers that support it
 * Movies and series with posters, seasons, resume points and autoplay of the next episode
 * Pause and short rewind on live TV, audio and subtitle tracks, aspect ratio, video quality
+* Record live TV, including from the beginning of the current programme when the channel has catch-up (the part that already aired downloads much faster than real time)
+* Scheduled and series recordings from the TV guide; they run even when the app is closed
+* Download past programmes, movies and whole seasons to watch without streaming; downloads resume where they stopped
+* A Recordings library with artwork and show details (episode, description, genre, year, cast), resume, and automatic clean-up when space runs low
+* Save recordings on the TV or on external storage (USB drive or SD card)
+* Opens the last channel you watched when it starts (can be turned off in Settings)
 * Search across channels, movies, series and the guide
 * Backup and restore of all playlists and settings (to a file, a URL or your phone)
 * Works entirely with the D-pad, OK and BACK; also touch on phones and tablets
@@ -108,10 +115,11 @@ Every download is verified (SHA-256), and Android only accepts an update signed 
 | The playlist won't load | Open the URL in a browser to check it works. Some providers require a specific User-Agent: set it in the playlist editor |
 | A channel only plays sound, or keeps reconnecting | The stream may be down or geo-blocked. Try it in VLC; if it works there but not in Prism IPTV, open an issue |
 | Empty TV guide | In the playlist's page choose *Refresh guide*, or set an EPG / XMLTV URL in the playlist editor |
+| A recording fails or stops | Some providers allow only one stream at a time: stop other playback, or set *Settings → Download connections* to 1. DASH and DRM-protected channels can't be recorded |
 
 ## Privacy
 
-Prism IPTV has no accounts, ads or analytics. Your playlists stay on the device; it only connects to your playlist and guide providers, and to GitHub to check for updates (which you can turn off under *Settings → Updates*).
+Prism IPTV has no accounts, ads or analytics. Your playlists and recordings stay on the device; it only connects to your playlist and guide providers, and to GitHub to check for updates (which you can turn off under *Settings → Updates*).
 
 ## License
 
